@@ -1,4 +1,5 @@
 # reddit-mirror-herokuApp
++ ul
 >Reddit бесконечная лента постов с использованием API социальной сети reddit.  
 >Использовались технологии: React.js, Type Script, Redux, Effector, Webpack.  
 >Запустить проект через npm: npm run dev или npm run start.  
