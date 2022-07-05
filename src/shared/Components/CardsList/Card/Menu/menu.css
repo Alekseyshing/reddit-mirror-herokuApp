@@ -1,0 +1,122 @@
+.menu {
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  padding: 0;
+}
+
+.menuButton {
+  width: 31px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(90deg);
+  border-radius: 31px;
+}
+.menuButton:active {
+  background-color: rgba(51, 51, 51, 0.1);
+}
+
+.closeButton {
+  font-size: 12px;
+  color: var(--grey66);
+  background-color: var(--greyD9);
+  padding: 12px 23px;
+  border-radius: 0 0 3px 3px;
+  width: 100%;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  top: 10px;
+  border-radius: 3px;
+  background-color: var(--white);
+  box-shadow: 0px 0px 20px 0px #00000026;
+}
+
+
+@media all and (min-width: 1024px) {
+  .menu {
+    position: relative;
+    order: 2;
+    display: flex;
+    align-items: center;
+    flex: 0 0;
+    top: unset;
+    right: unset;
+    margin: 0 0 0 auto;
+  }
+
+  .menuButton {
+    align-self: center;
+    transform: unset;
+  }
+
+  .dropdown {
+    right: -78px;
+    top: 19px;
+  }
+}
+
+@media all and (min-width: 1540px) {
+  .menuButton:hover {
+    background-color: rgba(51, 51, 51, 0.1);
+  }
+}
+
+
+.menuItemsList {
+  padding: 0 20px;
+}
+
+.menuItem {
+  padding: 12px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  color: var(--grey99);
+  font-size: 12px;
+  line-height: 14px;
+}
+.menuItem > svg {
+  margin-right: 7px;
+}
+
+.menuItemInactive,
+.dividerInactive {
+  display: none;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: var(--greyEC);
+}
+
+
+@media all and (min-width:1024px){
+  .menuItemInactive {
+    display: flex;
+  }
+
+  .dividerInactive {
+    display: block;
+  }
+
+  .menuItem {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+
+
+
+
+
+
+
+

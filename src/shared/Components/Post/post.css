@@ -1,0 +1,38 @@
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+  min-width: 200px;
+  min-height: 160px;
+  max-width: 80%;
+  padding: 24px;
+  margin-bottom: 25px;
+}
+
+.content {
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.close {
+  align-self: flex-end;
+  width: 40px;
+  height: 40px;
+  margin: -24px;
+  color: #000
+}
+
+.title {
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--black);
+  margin: 0;
+  margin-bottom: 30px;
+}

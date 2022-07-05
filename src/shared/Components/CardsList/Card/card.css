@@ -1,0 +1,53 @@
+.card {
+  position: relative;
+  background-color: var(--white);
+  border-radius: 7px;
+  padding: 20px 20px 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.card > *, .textContent > * {
+  flex: 1 1 100%;
+}
+.card > * + * {
+  padding: 13px 0 0;
+}
+.card:hover h2 a, .card:focus-within h2 a {
+  color: var(--orange);
+}
+
+@media all and (min-width: 1024px) {
+  .card {
+    background-color: transparent;
+    flex-flow: row nowrap;
+    max-height: 107px;
+    padding: 0 40px;
+  }
+  .card > * {
+    flex: 0 0;
+  }
+  .card > * + * {
+    padding: 0;
+  }
+}
+
+@media all and (min-width: 1540px) {
+  .card {
+    padding: 20px 60px;
+    max-height: 147px;
+    cursor: pointer;
+  }
+  .card:hover, .card:focus-within {
+    outline: 1px solid var(--grey-demi-dark);
+  }
+}
+
+@media all and (min-width: 1540px){
+  .card {
+    padding: 0 60px;
+  }
+
+  .textContent {
+    flex-basis: 672px;
+  }
+}

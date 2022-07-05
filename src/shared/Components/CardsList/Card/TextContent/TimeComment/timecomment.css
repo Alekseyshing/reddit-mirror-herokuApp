@@ -1,0 +1,19 @@
+.createdAt,
+.createdAt * {
+  font-size: 10px;
+  color: var(--grey99);
+  padding-right: 6px;
+}
+.publishedLabel {
+  display: none;
+}
+@media all and (min-width: 1024px ) {
+  .publishedLabel {
+    display: inline;
+    font-size: 14px;
+    padding-right: 0;
+  }
+  .createdAt {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,46 @@
+.title {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.postLink {
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+
+.postLink::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@media all and (min-width: 1024px) {
+  .textContent {
+    flex-basis:      540px;
+    order:           1;
+    margin:          0 0 0 38px;
+    flex-flow:       column-reverse nowrap;
+    justify-content: center;
+  }
+
+  .textContent > * {
+    flex: 0 0;
+  }
+
+  .title {
+    padding:     0 0 10px 0;
+    font-size:   20px;
+    line-height: 23px;
+  }
+
+  .postLink {
+    -webkit-line-clamp: 1;
+  }
+}

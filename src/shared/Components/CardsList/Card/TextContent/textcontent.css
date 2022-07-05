@@ -1,0 +1,136 @@
+.card {
+  position: relative;
+  background-color: var(--white);
+  border-radius: 7px;
+  padding: 20px 20px 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.card > *, .textContent > * {
+  flex: 1 1 100%;
+}
+.card > * + * {
+  padding: 13px 0 0;
+}
+.card:hover h2 a, .card:focus-within h2 a {
+  color: var(--orange);
+}
+
+
+.textContent {
+  display: flex;
+  flex-flow: row wrap;
+}
+.textContent > * + * {
+  padding: 7px 0 0;
+}
+
+.metaData {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+
+@media all and (min-width: 1024px) {
+  .textContent {
+    flex-basis: 540px;
+    order: 1;
+    margin: 0 0 0 38px;
+    flex-flow: column-reverse nowrap;
+    justify-content: center;
+  }
+  .textContent > * {
+    flex: 0 0;
+  }
+
+  .metaData {
+    flex-flow: row-reverse nowrap;
+    justify-content: flex-end;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+}
+
+@media all and (min-width: 1540px) {
+  .textContent {
+    flex-basis: 672px;
+  }
+}
+
+.userLink {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 20px;
+  padding: 0 6px 0 0;
+}
+
+.avatar {
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  margin: 0 7px 0 0;
+}
+
+.username {
+  color: var(--orange);
+  position: relative;
+  z-index: 1;
+}
+
+@media all and (min-width: 1024px) {
+  .userLink {
+    padding: 0 0 0 5px;
+  }
+}
+
+@media all and (min-width: 1540px) {
+  .userLink:hover a {
+    text-decoration: underline;
+  }
+}
+
+.userBox {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.userBox:hover span {
+  color: var(--orange);
+}
+.userBox:hover .avatarBox {
+  box-shadow: 0 0 0 1px var(--orange);
+}
+
+.avatarBox {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  border-radius: 100%;
+  box-shadow: none;
+}
+
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.username {
+  display: none;
+}
+
+@media all and (min-width: 1024px) {
+  .username {
+    display: flex;
+  }
+}
+
+
+

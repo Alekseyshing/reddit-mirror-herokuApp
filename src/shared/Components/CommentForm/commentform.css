@@ -1,0 +1,72 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  height: 89px;
+  min-width: 100%;
+  border: 1px solid #D9D9D9;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 3px 3px 0px 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #999999;
+  resize: none;
+}
+
+.input[aria-invalid] {
+  border-color: red;
+}
+
+.button {
+  width: 220px;
+  height: 50px;
+  background: #CC6633;
+  border-radius: 0px 0px 3px 0px;
+  align-self: flex-end;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.labelSpan{
+  color: var(--orange);
+  position: relative;
+  z-index: 1;
+}
+
+.labelInTextarea{
+  position: relative;
+  min-width: 100%;
+}
+
+.labelInTextarea > label {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+textarea:focus + label {
+  display: none;
+  outline: none;
+}
+
+textarea:valid + label {
+  display: none;
+}
+
+
